@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Self-Assessment Quiz</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="quiz.html">Quiz</a>
+</nav>
+
+<h1>Self-Assessment Quiz</h1>
+
+<form id="quizForm">
+
+<div class="question">
+<p>1. JavaScript is mainly used for ________.</p>
+<input type="text" id="q1">
+</div>
+
+<div class="question">
+<p>2. Which is NOT a programming language?</p>
+<input type="radio" name="q2" value="HTML"> HTML<br>
+<input type="radio" name="q2" value="Python"> Python<br>
+<input type="radio" name="q2" value="Java"> Java<br>
+</div>
+
+<div class="question">
+<p>3. Which symbol is used for comments in JS?</p>
+<input type="radio" name="q3" value="//"> //<br>
+<input type="radio" name="q3" value="<!-- -->"> HTML comment<br>
+<input type="radio" name="q3" value="**"> **<br>
+</div>
+
+<div class="question">
+<p>4. Which is used to declare variables?</p>
+<input type="radio" name="q4" value="let"> let<br>
+<input type="radio" name="q4" value="var"> var<br>
+<input type="radio" name="q4" value="Both"> Both<br>
+</div>
+
+<div class="question">
+<p>5. Which are JavaScript frameworks?</p>
+<input type="checkbox" name="q5" value="React"> React<br>
+<input type="checkbox" name="q5" value="Angular"> Angular<br>
+<input type="checkbox" name="q5" value="HTML"> HTML<br>
+</div>
+
+<button type="button" onclick="submitQuiz()">Submit</button>
+<button type="reset" onclick="resetQuiz()">Retake</button>
+
+</form>
+
+<div id="result"></div>
+
+<script src="js/quiz.js"></script>
+
+</body>
+</html>
